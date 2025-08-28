@@ -1,0 +1,235 @@
+@use "../../assets/scss/mixin";
+@use "../../assets/scss/variables";
+
+
+.girlfriend-card {
+  max-width: 310px;
+  width: 100%;
+
+}
+
+.g-card-main {
+  gap: 20px;
+}
+
+.g-card-img {
+  position: relative;
+  width: 100%;
+  max-width: 140px;
+  height: 210px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+
+}
+
+.g-card-close {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 40px;
+  height: 40px;
+  background: variables.$orangeLight2;
+  border-radius: 10px;
+  box-shadow: 0px 10px 25px 0px #00000026;
+  cursor: pointer;
+
+  i {
+    font-size: 15px;
+    background: variables.$darkPeach;
+    margin-left: unset;
+
+  }
+
+}
+
+.g-img-tolls {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  gap: 6px;
+}
+
+.g-video {
+  background: variables.$peach;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+  i {
+    font-size: 7px;
+    background: variables.$white;
+  }
+
+
+}
+
+.g-review {
+  padding: 7px 8px;
+  background: variables.$peach;
+  border-radius: 5px;
+  height: 20px;
+  gap: 3px;
+  cursor: pointer;
+
+
+  span {
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: variables.$white;
+
+  }
+
+  i {
+    font-size: 7px;
+    background: variables.$white;
+  }
+}
+
+.g-description-info {
+  gap: 3px;
+}
+
+.g-descr-item {
+  gap: 10px;
+
+  p {
+    min-width: 50px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: variables.$gra3;
+
+  }
+
+  span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: variables.$gra4;
+
+
+  }
+}
+
+.g-tags {
+  margin-top: 7px;
+  display: flex;
+  gap: 3px;
+  flex-wrap: wrap;
+  max-width: 110px;
+  width: 100%;
+
+  button {
+    padding: 3px 7px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: variables.$white;
+    background: variables.$cyan;
+    border-radius: 5px;
+    max-width: max-content;
+
+    &.active {
+      background: variables.$peach;
+    }
+
+  }
+}
+
+.g-card-tolls {
+  margin-top: 12px;
+}
+
+.g-card-titles {
+
+  h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23.94px;
+    color: variables.$darkPeach;
+
+  }
+
+  p {
+    color: variables.$darkPeach;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+
+  }
+}
+
+.g-card-contacts {
+  gap: 5px;
+  margin-top: 15px;
+
+  button {
+    padding: 7px 10px;
+    background: variables.$cyan;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16.9px;
+    border-radius: 5px;
+    color: variables.$white;
+
+    &:nth-child(1) {
+      min-width: 156px;
+    }
+
+    i {
+      font-size: 16px;
+      background: variables.$white;
+    }
+  }
+}
+
+.g-spend-times {
+  margin-top: 10px;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 6px;
+
+}
+
+.g-spend-time {
+  gap: 18px;
+
+
+}
+
+.g-time {
+  gap: 6px;
+  min-width: 76px;
+
+  i {
+    font-size: 22px;
+    background: variables.$grey;
+
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: variables.$grey;
+  }
+}
+.g-time-price{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: variables.$grey;
+
+}

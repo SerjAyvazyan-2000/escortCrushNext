@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+.icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+
+
+.icon-search{
+    mask-image: url("/icons/search.svg");
+    -webkit-mask-image: url("/icons/search.svg");
+}
+.icon-map{
+    mask-image: url(/icons/map.svg);
+    -webkit-mask-image: url(/icons/map.svg);
+}
+
+
+.icon-map{
+    mask-image: url(/icons/map.svg);
+    -webkit-mask-image: url(/icons/map.svg);
+}
+.icon-login{
+    mask-image: url(/icons/iconLogin.svg);
+    -webkit-mask-image: url(/icons/iconLogin.svg);
+}
+
+.icon-check{
+    mask-image: url(/icons/check.svg);
+    -webkit-mask-image: url(/icons/check.svg);
+}
+.icon-geolocation{
+    mask-image: url(/icons/geolocation.svg);
+    -webkit-mask-image: url(/icons/geolocation.svg);
+}
+.icon-arrowDown{
+    mask-image: url(/icons/arrowDown.svg);
+    -webkit-mask-image: url(/icons/arrowDown.svg);
+}
+.icon-info{
+    mask-image: url(/icons/Info.svg);
+    -webkit-mask-image: url(/icons/Info.svg);
+}
+.icon-arrow{
+    mask-image: url(/icons/arrow.svg);
+    -webkit-mask-image: url(/icons/arrow.svg);
+}
+.icon-add{
+    mask-image: url(/icons/add.svg);
+    -webkit-mask-image: url(/icons/add.svg);
+}
+.icon-edit{
+    mask-image: url(/icons/edit.svg);
+    -webkit-mask-image: url(/icons/edit.svg);
+}
+.icon-visibility{
+    mask-image: url(/icons/visibility.svg);
+    -webkit-mask-image: url(/icons/visibility.svg);
+}
+.icon-union{
+    mask-image: url(/icons/Union.svg);
+    -webkit-mask-image: url(/icons/Union.svg);
+}
+.icon-check2{
+    mask-image: url(/icons/check2.svg);
+    -webkit-mask-image: url(/icons/check2.svg);
+}
+.icon-edit2{
+    mask-image: url(/icons/edit2.svg);
+    -webkit-mask-image: url(/icons/edit2.svg);
+}
+.icon-review{
+    mask-image: url(/icons/iconReview.svg);
+    -webkit-mask-image: url(/icons/iconReview.svg);
+}
+.icon-play{
+    mask-image: url(/icons/play.svg);
+    -webkit-mask-image: url(/icons/play.svg);
+}
+.icon-tel{
+    mask-image: url(/icons/iconTel.svg);
+    -webkit-mask-image: url(/icons/iconTel.svg);
+}
+.icon-time1{
+    mask-image: url(/icons/time1.svg);
+    -webkit-mask-image: url(/icons/time1.svg);
+
+}
+.icon-time2{
+    mask-image: url(/icons/time2.svg);
+    -webkit-mask-image: url(/icons/time2.svg);
+}
+.icon-moon{
+    mask-image: url(/icons/moon.svg);
+    -webkit-mask-image: url(/icons/moon.svg);
+}

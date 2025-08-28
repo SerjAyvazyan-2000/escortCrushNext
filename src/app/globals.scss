@@ -1,0 +1,51 @@
+
+@use "../assets/scss/flex";
+@use "../assets/scss/normalize";
+@use "../assets/scss/mixin";
+
+
+.container {
+  max-width: 1242px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+#root{
+  height: 100%;
+
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.first-section{
+  margin-top: 63px;
+
+  @include mixin.screen-max-width-576{
+    margin-top: 0;
+  }
+}
+.last-section{
+  margin-bottom: 160px;
+
+  @include mixin.screen-max-width-576{
+    margin-bottom: 70px;
+
+  }
+}
+
+.mobile-block{
+  display: none;
+  @include mixin.screen-max-width-767{
+    display: flex;
+  }
+}
+.desktop-block{
+  @include mixin.screen-max-width-767{
+    display: none;
+  }
+}
+.text-wrap{
+  display: block;
+}

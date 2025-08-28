@@ -1,0 +1,92 @@
+@use "../../assets/scss/mixin";
+@use "../../assets/scss/variables";
+
+.attributes-columns{
+  gap: 30px;
+  margin-top: 18px;
+}
+.attribute-column{
+  max-width: 168px;
+  width: 100%;
+  gap: 14px;
+}
+.attribute-big-column{
+  max-width: 270px;
+  width: 100%;
+}
+.a-choose-block{
+  gap: 10px;
+}
+.a-choose-switch{
+   gap: 5px;
+}
+.a-block-title{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  color: variables.$grey;
+
+}
+.age-category-select{
+  position: relative;
+
+}
+.age-select-titles {
+  gap: 5px;
+  margin-bottom: 6px;
+
+  p {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    color: variables.$grey;
+
+  }
+
+  i {
+    background: variables.$cyanLight;
+    font-size: 11px;
+    cursor: pointer;
+    &:hover {
+      background: variables.$cyan;
+
+    }
+    &.active{
+      background: variables.$cyan;
+
+    }
+
+  }
+}
+
+.select-clue{
+  position: absolute;
+  padding: 20px;
+  border-radius: 5px;
+  background: variables.$lightPeach;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 100%;
+  max-width: 442px;
+  min-width: 442px;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  top: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    color: variables.$grey;
+
+  }
+
+  &.active{
+    opacity: 1;
+    visibility: visible;
+
+  }
+}

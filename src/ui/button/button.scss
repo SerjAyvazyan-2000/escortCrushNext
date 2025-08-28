@@ -1,0 +1,31 @@
+@use "../../assets/scss/mixin";
+@use "../../assets/scss/variables";
+
+
+
+.btn-orange-gradient {
+  padding: 14px;
+  background: variables.$orangeGradient;
+  box-shadow: 0 5px 25px 0 #D13E371C;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 19.5px;
+  text-align: center;
+  color: variables.$white;
+  border-radius: 5px;
+
+}
+
+.btn-border {
+  padding: 14px;
+  width: 100%;
+  border: 1px solid variables.$grey;
+  border-radius: 5px;
+  color: variables.$grey;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19.5px;
+  text-align: center;
+
+
+}

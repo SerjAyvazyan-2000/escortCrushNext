@@ -1,0 +1,174 @@
+@use "../../assets/scss/variables";
+@use "../../assets/scss/mixin";
+
+
+footer {
+  background: variables.$cyanGradient;
+  margin-top: auto;
+
+}
+
+.footer-cnt {
+  position: relative;
+  padding: 96px 0 45px;
+
+
+  @include mixin.screen-max-width-767{
+    padding: 64px 0 16px;
+
+  }
+}
+
+.footer-decor {
+  background: variables.$white;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  top: -1px;
+
+  @include mixin.screen-max-width-576{
+    height: 20px;
+
+  }
+}
+
+.footer-body {
+  gap: 20px;
+  flex-wrap: wrap;
+
+  @include mixin.screen-max-width-767{
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+.footer-clue{
+  font-weight: 400;
+  font-size: 13px;
+  color: variables.$white;
+  opacity: .6;
+  line-height: 100%;
+  margin-top: 14px;
+
+  @include mixin.screen-max-width-767{
+    margin-top: 2px;
+    max-width: 320px;
+
+  }
+}
+.footer-logo-column {
+  max-width: 244px;
+  width: 100%;
+
+
+
+}
+
+.footer-left-column {
+  gap: 71px;
+
+  @include mixin.screen-max-width-767{
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.footer-nav {
+  margin-top: 15px;
+
+  ul {
+    gap: 7px;
+    @include mixin.screen-max-width-767{
+      align-items: center;
+    }
+
+    li {
+      a {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: variables.$white;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  @include mixin.screen-max-width-767{
+    margin-top: 0;
+  }
+}
+
+
+.footer-buttons{
+  gap: 12px;
+
+}
+
+.footer-login {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: variables.$white;
+
+  @include mixin.screen-max-width-767{
+    border: 1px solid variables.$white;
+    border-radius: 10px;
+    padding: 12px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    i{
+      font-size: 20px;
+      background: variables.$white;
+    }
+  }
+
+
+}
+
+
+.footer-register {
+  gap: 1px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  color: variables.$cyan;
+  background: variables.$white;
+  border-radius: 10px;
+  padding: 12px;
+  height: 40px;
+
+
+  i {
+    font-size: 20px;
+    background: variables.$cyan;
+
+  }
+
+}
+.back-top-btn{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: right;
+  color: variables.$white;
+  margin-top: auto;
+
+
+}
+.footer-right-column{
+  margin-top: 20px;
+  @include mixin.screen-max-width-767{
+    margin-top: 0 ;
+  }
+}

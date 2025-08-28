@@ -1,0 +1,231 @@
+@use "../../assets/scss/variables";
+@use "../../assets/scss/mixin";
+
+
+.create-profile-body {
+  gap: 42px;
+
+  @include mixin.screen-max-width-991{
+    flex-direction: column-reverse;
+  }
+}
+
+.create-profile-column {
+  max-width: 580px;
+  width: 100%;
+
+  @include mixin.screen-max-width-991{
+    max-width: 100%;
+  }
+}
+
+
+.profile-column-left {
+  padding: 10px 10px 41px 10px;
+  border-radius: 10px;
+  background: variables.$white3;
+
+  @include mixin.screen-max-width-767{
+    padding: 10px 10px 20px 10px;
+
+  }
+}
+
+.client-model-tabs {
+  gap: 10px;
+  flex-wrap: wrap;
+
+  button {
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 36px;
+    color: variables.$cyan;
+    background: variables.$white;
+    border-radius: 10px;
+    flex: 1 1 49%;
+    padding: 12px;
+    opacity: .3;
+
+    &.active {
+      opacity: 1;
+    }
+
+    @include mixin.screen-max-width-767{
+      font-size: 16px;
+      line-height: 36px;
+      flex: 1 1 47%;
+      padding: 2px 0 2px 13px;
+      display: flex;
+    }
+
+  }
+}
+
+
+.create-profile-form {
+  margin-top: 21px;
+  padding: 0 40px;
+
+  @include mixin.screen-max-width-576{
+    margin-top: 13px;
+    padding: 0 10px;
+  }
+}
+
+.form-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: variables.$darkPeach;
+
+}
+
+.p-form-inputs {
+  margin-top: 15px;
+  gap: 24px;
+
+}
+
+
+.form-actions {
+  margin-top: 19px;
+  gap: 20px;
+}
+
+.form-agree {
+  gap: 6px;
+  cursor: pointer;
+
+  p {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 100%;
+    color: variables.$grey;
+
+  }
+
+  @include mixin.screen-max-width-576{
+    align-items: start;
+  }
+}
+
+.form-agree-icon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  box-shadow: 0 2px 6px 0 variables.$gray2;
+  border-radius: 5px;
+  border: 1px solid variables.$grey;
+
+}
+
+.btn-reef-gradient {
+  padding: 14px;
+  background: linear-gradient(90deg, #F98068 0%, #F9B29D 100%);
+  box-shadow: 0 5px 25px 0 #D13E371C;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 19.5px;
+  text-align: center;
+  color: variables.$white;
+  border-radius: 5px;
+
+}
+
+.p-promotion {
+  gap: 25px;
+  margin-top: 24px;
+
+  p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: variables.$darkPeach;
+
+    @include mixin.screen-max-width-576{
+      font-size: 15px;
+      line-height: 100%;
+
+    }
+
+  }
+  @include mixin.screen-max-width-576{
+    gap: 19px;
+
+  }
+}
+
+.promotion-img {
+  width: 89px;
+  height: 89px;
+  flex: 0 0 89px;
+  border-radius: 50%;
+  box-shadow: 2px 5px 15px 0px #A0423833;
+  background: variables.$orangeGradient2;
+
+  img {
+    max-width: 69px;
+    max-height: 69px;
+
+  }
+
+}
+
+.create-form-step2 {
+  gap: 19px;
+  margin-top: 26px;
+  padding: 0 50px;
+
+  @include mixin.screen-max-width-576{
+    margin-top: 13px;
+    padding: 0 10px;
+  }
+}
+
+.another-way {
+  padding: 43px 50px 50px 50px;
+  margin-top: 20px;
+  gap: 17px;
+
+  @include mixin.screen-max-width-576{
+    margin-top: 39px;
+    padding: 0;
+
+  }
+
+
+}
+
+.another-way-tag {
+  gap: 7px;
+
+  i {
+    font-size: 11px;
+    background: variables.$cyan;
+    flex: 0 0 11px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    color: variables.$grey;
+
+  }
+}
+
+
+
+.p-form-tag {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 100%;
+  color: variables.$grey;
+
+  a {
+    text-decoration: underline;
+    color: variables.$grey;
+
+  }
+
+}

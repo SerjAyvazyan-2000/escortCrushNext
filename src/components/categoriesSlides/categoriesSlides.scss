@@ -1,0 +1,34 @@
+@use "../../assets/scss/variables";
+@use "../../assets/scss/mixin";
+
+
+.categories-slides-section{
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.categories-swiper{
+  overflow: unset;
+}
+.categories-slide{
+
+  p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23.94px;
+    color: variables.$darkPeach;
+    margin-top: 12px;
+  }
+}
+
+.categories-slide-img{
+  max-height: 190px;
+  height: 100%;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}

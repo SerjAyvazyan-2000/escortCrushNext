@@ -1,0 +1,54 @@
+@use "../../assets/scss/mixin";
+@use "../../assets/scss/variables";
+
+
+
+.girlfriends-add-input {
+  gap: 10px;
+  width: 100%;
+}
+
+.g-add-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  flex: 0 0 40px;
+  background: variables.$lightSaliva;
+  cursor: pointer;
+
+  i{
+    font-size: 16px;
+    margin-left: unset;
+    transform: rotate(45deg);
+  }
+}
+
+.girlfriends-add-block {
+
+  p{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 100%;
+    color: variables.$grey;
+    margin-top: 5px;
+  }
+
+
+}
+.girlfriends-add-clue{
+  gap: 5px;
+  margin-top: 7px;
+
+  i{
+    background: variables.$cyan;
+    font-size: 11px;
+  }
+  p{
+    margin-top: unset;
+  }
+}
+.girlfriends-cards{
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
