@@ -1,7 +1,17 @@
 @use "../../assets/scss/variables";
 @use "../../assets/scss/mixin";
 
+.create-profile-section{
+  margin-top: 19px;
+  margin-bottom: 130px;
 
+  @include mixin.screen-max-width-576{
+    margin-bottom: 70px;
+    margin-top: 0;
+
+  }
+
+}
 .create-profile-body {
   gap: 42px;
 

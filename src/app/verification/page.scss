@@ -1,0 +1,287 @@
+@use "../../assets/scss/variables";
+@use "../../assets/scss/mixin";
+
+.verification-section{
+  margin-top: 36px;
+  @include mixin.screen-max-width-767{
+    margin-top: 0;
+  }
+}
+.verification-body{
+  gap: 40px;
+  justify-content: center;
+  margin-top: 52px;
+
+  @include mixin.screen-max-width-767{
+    flex-direction: column-reverse;
+    margin-top: 0;
+    gap: 21px;
+  }
+}
+.verification-min-cnt{
+  max-width: 580px;
+  width: 100%;
+  padding: 40px 40px 50px 40px;
+  box-shadow: 5px 5px 25px 0px #BFAFAE40;
+  border-radius: 10px;
+  background: variables.$white4;
+
+  @include mixin.screen-max-width-767{
+    padding: 0;
+    box-shadow: unset;
+    border-radius: unset;
+    max-width:100%;
+
+  }
+}
+
+.verification-titles{
+
+  h2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: variables.$cyan
+  }
+  p{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    color: variables.$grey ;
+
+  }
+}
+
+
+.v-examples-block{
+ margin-top: 15px;
+
+  h3{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 100%;
+    color: variables.$grey;
+  }
+
+}
+
+.v-examples-items{
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 21px;
+}
+
+.v-example-img{
+
+  img{
+    border-radius: 10px;
+    object-fit: cover;
+
+    @include mixin.screen-max-width-576{
+      width: 150px;
+      height: 226px;
+    }
+  }
+}
+
+.v-upload-block {
+  margin-top: 20px;
+}
+
+.v-upload-label {
+  border: 1px solid variables.$cyan;
+  max-width: 80px;
+  width: 100%;
+  max-height: 80px;
+  min-height: 80px;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+
+  i {
+    background: variables.$cyan;
+    font-size: 16px;
+  }
+
+  input {
+    display: none;
+  }
+
+  &.error {
+    border: 1px solid variables.$error;
+
+  }
+}
+
+
+.v-uploaded-images {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.v-uploaded-wrapper {
+  max-width: 80px;
+  width: 100%;
+
+  p {
+    color: variables.$grey;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 100%;
+    text-align: center;
+    margin-top: 2px;
+
+  }
+}
+
+.v-uploaded-img {
+  width: 100%;
+  height: 80px;
+  border-radius: 12px;
+  z-index: 2;
+  position: relative;
+  border: 2px solid variables.$cyan;
+
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+  }
+
+
+
+
+}
+
+.v-remove-block {
+  position: absolute;
+  left: -10px;
+  top: -14px;
+  width: 24px;
+  height: 24px;
+  background: variables.$darkPeach;
+  border-radius: 50%;
+  z-index: 2;
+  cursor: pointer;
+
+  i {
+    font-size: 12px;
+    background: variables.$white;
+    margin-left: unset;
+  }
+}
+
+.v-uploaded-error {
+  .remove-block {
+    top: -14px;
+
+  }
+
+}
+
+.v-uploaded-error {
+  border: 2px solid variables.$orangeLight;
+  border-radius: 14px;
+
+}
+
+.v-uploaded-success {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  border: 1px solid variables.$cyan;
+  background: #516060;
+
+  opacity: .6;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+
+
+  .icon-check {
+    font-size: 41px;
+    background: variables.$white;
+    margin-left: 3px;
+    margin-top: -3px;
+  }
+}
+
+
+.v-upload-video-block{
+  margin-top: 46px;
+}
+
+
+.v-video-texts{
+
+  ul{
+
+    li{
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 130%;
+      color: variables.$grey;
+      margin-left: 10px;
+    }
+
+    a{
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 130%;
+      color: variables.$grey;
+      display: block;
+      margin-left: 20px;
+
+    }
+  }
+
+}
+
+.v-video-description{
+  margin-top: 16px;
+  gap: 20px;
+
+  p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    color: variables.$grey;
+
+  }
+
+  strong{
+    font-weight: 700;
+  }
+}
+.view-video{
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 130%;
+  color: variables.$grey;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  margin-top: 20px;
+}
+.v-video-uploaded{
+  margin-top: 42px;
+  margin-bottom: 39px;
+
+  @include mixin.screen-max-width-767{
+    margin-top: 38px;
+    margin-bottom: 38px
+  }
+}
+.v-submit{
+
+  @include mixin.screen-max-width-576{
+    button{
+      padding: 8.5px ;
+      line-height: 15px
+    }
+  }
+}

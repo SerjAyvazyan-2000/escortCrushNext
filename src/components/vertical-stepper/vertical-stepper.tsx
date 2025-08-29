@@ -6,11 +6,7 @@ export type Step = {
     title: string;
 };
 
-// type Props = {
-//     steps: Step[];
-//     currentStep: number;
-//     className?: string;
-// };
+
 
 interface StepS {
     steps: Step[],
@@ -34,7 +30,7 @@ const VerticalStepper: FC<StepS> = ({steps,currentStep}) => {
                         : '';
 
             return (
-                <div key={index}>
+                <div key={index} className='stepper-item-wrapper '>
                     <div className={`vertical-stepper-item G-align-center ${status}  `}>
                         <div className='stepper-number  G-center'>
                             <span>{index}</span>

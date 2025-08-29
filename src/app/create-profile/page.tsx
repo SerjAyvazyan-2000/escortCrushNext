@@ -34,7 +34,7 @@ export default function CreateProfile(){
 
 
 
-    return <section className='create-profile-section  first-section last-section'>
+    return <section className='create-profile-section  '>
         <div className='container'>
 
             <div className='create-profile-body G-flex'>

@@ -736,7 +736,10 @@ export default function Profile() {
                             </div>
 
 
-                            <VerticalStepper currentStep={currentStep} steps={steps}/>
+                            <div className='profile-stepper'>
+                                <VerticalStepper currentStep={currentStep} steps={steps}/>
+
+                            </div>
 
 
                         </div>

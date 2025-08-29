@@ -1,5 +1,5 @@
 'use client';
-import {useEffect, useRef, useState} from 'react';
+import {useEffect, useMemo, useRef, useState} from 'react';
 import './select.scss';
 import Checkbox from "@/ui/checkbox/checkbox";
 
@@ -65,6 +65,21 @@ export default function Select({
     };
 
 
+    const labelByValue = useMemo(() => {
+        const map = new Map<string, string>();
+        options.forEach(opt => {
+            map.set(opt.value, opt.label ?? opt.value);
+            if('valueItems' in opt){
+                if (Array.isArray(opt.valueItems)) {
+                    opt.valueItems.forEach(child => {
+                        map.set(child.value, child.label ?? child.value);
+                    });
+                }
+            }
+        });
+        return map;
+    }, [options]);
+
 
     return (
         <div ref={wrapperRef} className={`select-multi ${className} `}>
@@ -80,11 +95,8 @@ export default function Select({
                 onClick={() => setOpen(o => !o)}
             >
                 <p className={`select-multi-value ${value.length ? '' : 'placeholder'}`}>
-                    {value.length
-                        ? options.find(item => item.value === value[0])?.label
-                        : placeholder}
+                    {value.length ? value.map(v => labelByValue.get(v) ?? v).join(', ') : placeholder}
                 </p>
-
                 <i className={`icon icon-arrowDown ${open ? 'open' : ''}`}/>
             </button>
 

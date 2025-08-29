@@ -2,6 +2,7 @@
 @use "../assets/scss/flex";
 @use "../assets/scss/normalize";
 @use "../assets/scss/mixin";
+@use "../assets/scss/variables";
 
 
 .container {
@@ -19,15 +20,9 @@
   flex-direction: column;
   height: 100%;
 }
-.first-section{
-  margin-top: 63px;
 
-  @include mixin.screen-max-width-576{
-    margin-top: 0;
-  }
-}
 .last-section{
-  margin-bottom: 160px;
+  margin-bottom: 130px;
 
   @include mixin.screen-max-width-576{
     margin-bottom: 70px;
@@ -48,4 +43,19 @@
 }
 .text-wrap{
   display: block;
+}
+.section-title{
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: variables.$darkPeach;
+
+  @include mixin.screen-max-width-576{
+    font-size: 25px;
+    line-height: 36px;
+    text-align: start;
+
+  }
+
 }

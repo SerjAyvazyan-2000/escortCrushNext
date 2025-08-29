@@ -1,0 +1,67 @@
+@use "../../assets/scss/variables";
+@use "../../assets/scss/mixin";
+
+.v-thanks-icon{
+  margin-top: 10px;
+
+  img{
+
+    @include mixin.screen-max-width-576{
+      width: 112px;
+      height: 112px;
+    }
+  }
+  @include mixin.screen-max-width-576{
+    margin-top: 0
+  }
+}
+.v-thanks-body{
+  margin-top: 34px;
+
+  @include mixin.screen-max-width-576{
+    margin-top: 0 ;
+  }
+
+
+}
+.thanks-texts{
+  margin-top: 36px;
+  gap: 30px;
+  p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    max-width: 711px;
+    color: variables.$cyan;
+    margin: 0 auto;
+    text-align: center;
+    @include mixin.screen-max-width-576{
+      font-weight: 700;
+      font-size: 15px;
+
+    }
+  }
+  @include mixin.screen-max-width-576{
+    margin-top: 15px;
+    gap: 22px;
+  }
+
+}
+.thanks-back-link{
+  max-width: 225px;
+  width: 100%;
+  margin: 34px auto 0;
+
+  @include mixin.screen-max-width-576{
+    max-width: 100%;
+
+  }
+}
+.thanks-section-title{
+  text-align: center;
+
+  @include mixin.screen-max-width-576{
+    font-size: 24px;
+  }
+
+}

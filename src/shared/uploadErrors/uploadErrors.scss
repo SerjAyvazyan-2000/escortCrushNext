@@ -1,0 +1,26 @@
+@use "../../assets/scss/variables";
+@use "../../assets/scss/mixin";
+.upload-errors {
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.upload-error {
+  gap: 6px;
+
+  .icon-info {
+    background: variables.$error;
+    font-size: 11px;
+    flex: 0 0 10px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 100%;
+    color: variables.$error;
+
+  }
+
+
+}
